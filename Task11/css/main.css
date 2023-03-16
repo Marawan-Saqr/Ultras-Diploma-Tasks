@@ -1,0 +1,1602 @@
+/* start personal theme */
+body{
+    transition: all .5s;
+    height: 7000px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.display{
+    display: none;
+}
+/* end personal theme */
+
+/* start nav */
+nav{
+    margin: 20px 0px;
+}
+
+nav .bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .bar .logo{
+    color: #394B6C;
+    font-weight: bold;
+}
+
+nav .bar .logo i{
+    color: #fb3e3e;
+    font-size: 26px;
+    animation-name: virus-rotate;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes virus-rotate{
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+nav .bar .navUl ul{
+    list-style-type: none;
+}
+
+nav .bar .navUl ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    transition: all .4s;
+    font-weight: bold;
+}
+
+nav .bar .navUl ul li:hover{
+    transform: scale(1.1, 1.1);
+}
+
+nav .bar .navUl ul li a{
+    color: gray;
+    transition: all .5s;
+    text-decoration: none;
+}
+
+nav .bar .navUl ul li a:hover{
+    color: #4c4cff;
+    transition: all .5s;
+}
+
+nav .bar .but button{
+    background-color: #4c4cff;
+    border-radius: 40px;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 7px;
+    transition: all .4s;
+    margin-right: 5px;
+}
+
+nav .bar .but button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .bar .but button[class="Dark"]{
+    color: #fff;
+    background-color: black;
+    border-radius: 40px;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 7px;
+    transition: all .4s;
+}
+
+nav .bar .but button:hover{
+    transform: scale(1.1, 1.1);
+    transition: all .4s;
+}
+/* start media for nav */
+@media (max-width: 720px){            /* extra small screen */
+    nav .bar{
+        align-items: center;
+    }
+
+    nav .bar .navUl{
+        position: fixed;
+        left: 15px;
+        bottom: 0px;
+        width: 39%;
+        background-color: black;
+        border-radius: 5px;
+        height: 100vh;
+        display: none;
+        z-index: 15;
+    }
+
+    nav .bar .navUl ul li{
+        display: block;
+    }
+
+    nav .bar .but button[class="Don't"]{
+        display: none;
+    }
+
+    nav .bar .but button[class="Dark"]{
+        display: block;
+        position: fixed;
+        right: 0px;
+        top: 60px;
+    }
+
+    nav .bar i{
+        display: block;
+        cursor: pointer;
+        margin-top: 4px;
+        background-color: #afafaf66;
+        border-radius: 5px;
+        padding: 8px;
+        color: rgb(100, 100, 100);
+    }
+
+    nav .bar i:hover{
+        color: black;
+    }
+
+    nav .bar .logo i[class="fas fa-virus"]{
+        background-color: #ffffff00;
+        display: inline-block;
+        padding: 0px;
+    }
+
+    nav .bar .logo i[class="fas fa-virus"]:hover{
+        color: #fb3e3e;
+    }
+}
+
+@media (max-width: 767px){            /* mobile and tablet screen rules */
+    nav .bar{
+        align-items: center;
+    }
+
+    nav .bar .navUl{
+        position: fixed;
+        left: 15px;
+        bottom: 0px;
+        width: 39%;
+        background-color: black;
+        border-radius: 5px;
+        height: 100vh;
+        display: none;
+        line-height: 2.4;
+        z-index: 15;
+    }
+
+    nav .bar .navUl ul li{
+        display: block;
+    }
+
+    nav .bar .but button[class="Don't"]{
+        display: none;
+    }
+
+    nav .bar .but button[class="Dark"]{
+        display: block;
+        position: fixed;
+        right: 0px;
+        top: 60px;
+    }
+
+    nav .bar i{
+        display: block;
+        cursor: pointer;
+        margin-top: 4px;
+        background-color: #afafaf66;
+        border-radius: 5px;
+        padding: 8px;
+        color: rgb(100, 100, 100);
+    }
+
+    nav .bar .another{
+        color: black;
+        display: none;
+    }
+
+    nav .bar i:hover{
+        color: black;
+    }
+
+    nav .bar .logo i[class="fas fa-virus"]{
+        background-color: #ffffff00;
+        display: inline-block;
+        padding: 0px;
+    }
+
+    nav .bar .logo i[class="fas fa-virus"]:hover{
+        color: #fb3e3e;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){            /* small screen rules */
+    nav .bar{
+        align-items: center;
+    }
+
+    nav .bar .navUl{
+        position: fixed;
+        left: 15px;
+        bottom: 0px;
+        width: 39%;
+        background-color: black;
+        color: #fff;
+        border-radius: 5px;
+        height: 100vh;
+        display: none;
+        line-height: 2.4;
+        z-index: 15;
+    }
+
+    nav .bar .navUl ul li{
+        display: block;
+    }
+
+    nav .bar .but button[class="Don't"]{
+        display: none;
+    }
+
+    nav .bar .but button[class="Dark"]{
+        display: block;
+        position: fixed;
+        right: 5px;
+        top: 60px;
+    }
+
+    nav .bar i{
+        display: block;
+        cursor: pointer;
+        margin-top: 4px;
+        background-color: #afafaf66;
+        border-radius: 5px;
+        padding: 8px;
+        color: rgb(100, 100, 100);
+    }
+
+    nav .bar i:hover{
+        color: black;
+    }
+
+    nav .bar .logo i[class="fas fa-virus"]{
+        background-color: #ffffff00;
+        display: inline-block;
+        padding: 0px;
+    }
+
+    nav .bar .logo i[class="fas fa-virus"]:hover{
+        color: #fb3e3e;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){            /* meduim screen rules */
+    nav .bar{
+        align-items: center;
+    }
+
+    nav .bar .navUl{
+        position: fixed;
+        left: 15px;
+        bottom: 0px;
+        width: 39%;
+        background-color: black;
+        color: #fff;
+        border-radius: 5px;
+        height: 100vh;
+        display: none;
+        line-height: 2.4;
+        z-index: 15;
+    }
+
+    nav .bar .navUl ul li{
+        display: block;
+    }
+
+    nav .bar .but{
+        display: none;
+    }
+
+    nav .bar i{
+        display: block;
+        cursor: pointer;
+        margin-top: 4px;
+        background-color: #afafaf66;
+        border-radius: 5px;
+        padding: 8px;
+        color: rgb(100, 100, 100);
+    }
+
+    nav .bar i:hover{
+        color: black;
+    }
+
+    nav .bar .logo i[class="fas fa-virus"]{
+        background-color: #ffffff00;
+        display: inline-block;
+        padding: 0px;
+    }
+
+    nav .bar .logo i[class="fas fa-virus"]:hover{
+        color: #fb3e3e;
+    }
+}
+/* end media for nav */
+/* end nav */
+
+/* start section about */
+.about{
+    margin: 111px 0px;
+}
+
+.about .left h1{
+    color: #50658e;
+    font-size: 85px;
+    font-weight: bold;
+    
+}
+
+.about .left ul{
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.about .left ul li[class="first"]{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about .left ul li[class="second"]{
+    color: #50658e;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about .left p{
+    font-size: 13px;
+    color: gray;
+}
+
+.about .protect button{
+    font-size: 20px;
+    border-radius: 20px;
+    transition: all .5s;
+}
+
+.about .protect button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.about .protect button:hover{
+    transform: scale(1.1, 1.1);
+    transition: all .5s;
+}
+
+.about .about-covid a{
+    color: #007bff;
+    font-size: 21px;
+    margin-top: 9px;
+    text-decoration: none;
+}
+
+.about .about-covid a i{
+    font-size: 15px;
+}
+
+.about .World-numbers{
+    margin: 40px 0px;
+}
+
+.about .World-numbers p{
+    margin: 0px 0px 5px 0px;
+    color: #6e6efa;
+    font-size: 9px;
+}
+
+.about .World-numbers h6{
+    font-size: 22px;
+    font-weight: bold;
+}
+/* start media for section about */
+@media (max-width: 720px){                                  /* extra small screen rules */    
+    .about .left{
+        text-align: center;
+    }
+
+    .about .left h1{
+        font-size: 60px;
+    }
+
+    .about .protect button{
+        margin-bottom: 20px;
+    }
+
+    .about .left .World-numbers{
+        margin: 25px 0px;
+    }
+}
+
+/* start media for section about */
+@media (max-width: 767px){                                 /* mobile and tablet screen rules */    
+    .about .left{
+        text-align: center;
+    }
+
+    .about .left h1{
+        font-size: 75px;
+    }
+
+    .about .left .World-numbers{
+        margin: 30px 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){          /* small screen rules */    
+    .about .left h1{
+        font-size: 50px;
+    }
+
+    .about .left .World-numbers{
+        margin: 30px 0px;
+    }
+
+    .about .left ul li[class="first"]{
+        color: red;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .about .left ul li[class="second"]{
+        color: #50658e;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .about .protect button{
+        font-size: 11px;
+    }
+    
+    .about .about-covid h6{
+        color: blue;
+        font-size: 13px;
+    }
+
+    .about .about-covid a{
+        color: #007bff;
+        font-size: 18px;
+        margin-top: 9px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){          /* meduim screen rules */    
+    .about .protect button{
+        font-size: 16px;
+    }
+    
+    .about .about-covid h6{
+        color: blue;
+        font-size: 17px;
+    }
+}
+/* end media for section about */
+/* end section about */
+
+/* start section about-corona */
+.about-corona h3{
+    color: blue;
+    font-size: 19px;
+    letter-spacing: 6px;
+}
+
+.about-corona h1{
+    color: #50658e;
+    font-weight: bold;
+}
+
+.about-corona h4{
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+.about-corona h5{
+    margin: 30px 0px;
+    font-size: 23px;
+}
+
+.about-corona p{
+    font-size: 18px;
+}
+
+.about-corona .links .list-group{
+    line-height: 2.2;
+}
+
+.about-corona .links .list-group .special{
+    color: #44526d;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+.about-corona .links .list-group li{
+    color: #0000a1;
+    font-size: 20px;
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.about-corona .links .list-group li:hover{
+    color: #fff;
+    background-color: black;
+    transition: all .5s;
+}
+
+.about-corona .links .list-group li a{
+    text-decoration: none;
+}
+
+.about-corona .links .list-group li a:hover{
+    color: #fff;
+}
+/* start media for section about-corona */
+@media (min-width: 768px) and (max-width: 991px) {     /* small screen rules */
+    .about-corona .list-group h3 {
+        font-size: 20px !important;
+    }
+
+    .about-corona .list-group a {
+        font-size: 17px;
+    }
+
+    .about-corona .list-group i {
+        font-size: 13px;
+    }
+}
+/* end media for section about-corona */
+/* end section about-corona */
+
+/* start section how-corona */
+.how-corona{
+    margin: 80px 0px;
+}
+
+.how-corona h3{
+    color: blue;
+    font-size: 19px;
+    letter-spacing: 6px;
+}
+
+.how-corona h1{
+    color: #50658e;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.how-corona p[class="top"]{
+    margin: 20px 0px;
+    font-size: 18px;
+    color: gray;
+}
+
+.how-corona .box img{
+    border-bottom: 6px solid #6aa5ff;
+}
+
+.how-corona .box h4{
+    margin: 20px 0px;
+    color: #5959fb;
+    font-size: 23px;
+}
+
+.how-corona .box p{
+    font-size: 15px;
+}
+
+.how-corona .question button{
+    margin: 50px 0px 20px 0px;
+    border-radius: 20px;
+    width: 20%;
+    transition: all .5s;
+    background-color: #00a6c4;
+}
+
+.how-corona .question button:hover{
+   transform: scale(1.1, 1.1);
+   transition: all .5s;
+}
+
+.how-corona .question button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.how-corona .question button i{
+    margin-right: 27px;
+    font-size: 12px;
+}
+/* start media for section how corona */
+@media(max-width: 767px) {                                      /* mobile and tablet screen rules */
+    .how-corona h1{
+        color: #50658e;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .how-corona .question button{
+        margin: 30px 0px 20px 0px;
+        width: 70%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {               /* small screen rules */
+    .how-corona .question button{
+        margin: 30px 0px 20px 0px;
+        width: 38%;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {               /* meduim screen rules */
+    .how-corona .question button{
+        margin: 30px 0px 20px 0px;
+        width: 28%;
+    }
+}
+/* end media for section how corona */
+/* end section how-corona */
+
+/* start section symptoms */
+.symptoms{
+    margin: 20px 0px;
+}
+
+.symptoms h3{
+    color: blue;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.symptoms h1{
+    color: #50658e;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.symptoms p{
+    color: gray;
+    font-size: 16px;
+}
+
+.symptoms .box{
+    position: relative;
+    margin-top: 40px;
+    background: #f5f5f5;
+    padding: 11px;
+    box-shadow: 1px 1px 20px 5px #dcdcdc;
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.symptoms .box:hover{
+    transform: scale(1.1, 1.1);
+    transition: all .5s;
+}
+
+.symptoms .box .img-box{
+    position: absolute;
+    width: 20%;
+    top: -25%;
+    right: 9%;
+}
+
+.symptoms .box .img-box img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%
+}
+
+.symptoms .box h6{
+    color: #3939f7;
+}
+
+.symptoms .box p{
+    color: black;
+}
+
+.symptoms .box p span{
+    font-weight: bold;
+}
+/* start media for section symptoms */
+@media(max-width: 767px) {                                        /* mobile and tablet screen rules */
+    .symptoms .box:hover{
+        transform: scale(1, 1);
+    }
+
+    .symptoms .box .img-box{
+        position: absolute;
+        width: 15%;
+        top: -25%;
+        right: 9%;
+    }
+
+    .symptoms .box .img-box img{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {                   /* small screen rules */
+    .symptoms .box:hover{
+        transform: scale(1, 1);
+    }
+
+    .symptoms .box .img-box{
+        position: absolute;
+        width: 29%;
+        top: -16%;
+        right: 9%;
+    }
+
+    .symptoms .box .img-box img{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%
+    }
+
+    .symptoms .box p{
+        color: black;
+        font-size: 13px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {                   /* meduim screen rules */
+    .symptoms .box:hover{
+        transform: scale(1, 1);
+    }
+
+    .symptoms .box .img-box{
+        position: absolute;
+        width: 23%;
+        top: -24%;
+        right: 9%;
+    }
+
+    .symptoms .box .img-box img{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .symptoms .box p{
+        color: black;
+        font-size: 14px;
+    }
+}
+/* end media for section symptoms */
+/* end section symptoms */
+
+/* start section alerting */
+.alerting{
+    margin: 120px 0px; 
+    transition: all .5s;
+}
+
+.alerting:hover{
+   background-color: #dfdfdf; 
+   transition: all .5s;
+}
+
+.alerting .left i{
+    color: #4343fd;
+    margin-right: 10px;
+    font-size: 42px;
+}
+
+.alerting .left p{
+    margin-top: 35px;
+    color: gray;
+}
+
+.alerting .left p span{
+    color: #4343fd;
+    font-size: 17px;
+}
+
+.alerting .right button{
+    border-radius: 20px;
+    transition: all .5s;
+    background-color: #00a6c4;
+}
+
+.alerting .right button:hover{
+    transition: all .5s;
+    transform: scale(1.1, 1.1);
+}
+
+.alerting .right i{
+    margin-right: 10px;
+}
+
+.alerting .right a{
+    color: #fff;
+    text-decoration: none;
+}
+/* start media for section alerting */
+@media(max-width: 767px) {                     /* mobile and tablet screen rules */
+    .alerting .right{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .alerting button{
+        margin-bottom: 25px;
+    }
+}
+/* end media for section alerting */
+/* end section alerting */
+
+/* start section prevention */
+.prevention{
+    margin: 90px 0px;
+    background-color: #f3f3f3;
+    padding: 40px 0px;
+    transition: all .5s;
+}
+
+.prevention h3{
+    color: blue;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.prevention h1{
+    color: #50658e;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.prevention p{
+    color: gray;
+    font-size: 16px;
+}
+
+.prevention .box{
+    margin: 30px 0px;
+}
+
+.prevention .box img{
+    max-width: 35%;
+    border-radius: 50%;
+    animation-name: img-color;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes img-color{
+    25%{
+        box-shadow: 1px 1px 5px 1px red;
+    }
+
+    50%{
+        box-shadow: 1px 1px 9px 1px green;
+    }
+
+    75%{
+        box-shadow: 1px 1px 13px 1px blue;
+    }
+
+    100%{
+        box-shadow: 1px 1px 17px 1px yellow;
+    }
+}
+
+.prevention .box h4{
+    color: #4e4e4e;
+    font-size: 16px;
+    margin: 18px;
+}
+
+.prevention .down button{
+    border-radius: 20px;
+    transition: all .5s;
+    background-color: #00a6c4;
+    margin: 20px 0px;
+}
+
+.prevention .down button:hover{
+    transition: all .5s;
+    transform: scale(1.1, 1.1);
+}
+
+.prevention .down button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.prevention .down button i{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.prevention .down h4{
+    font-size: 20px;
+}
+
+.prevention .down a{
+    text-decoration: none;
+}
+
+.prevention .down a i{
+    margin-left: 7px;
+    font-size: 12px;
+}
+/* start media for section prevention */
+@media(min-width: 768px) and (max-width: 991px){        /*small screen rules */
+    .prevention .box img{
+        max-width: 50%;
+    }
+
+    .prevention .box h4{
+        font-size: 13px;
+    }
+
+    .prevention .box p{
+        font-size: 14px;
+    }
+}
+/* end media for section prevention */
+/* end section prevention */
+
+/* start section steps */
+.steps .container{
+    background-color: #f7f7f7;
+    padding: 27px 35px;
+    border-radius: 27px;
+}
+
+.steps .left{
+    margin-top: 30px;
+}
+
+.steps .list i{
+    color: #fff;
+    background-color: #89ea89;
+    padding: 3px;
+    border-radius: 50%;
+    font-size: 9px;
+    margin: 0px 8px 18px 0px;
+}
+
+.steps .list p{
+    font-size: 16px;
+}
+
+.steps .list p span{
+    font-weight: bold;
+}
+/* start media for section steps */
+@media(min-width: 767px){            /* mobile and tablet screen rules */
+    .steps .right img{
+        max-width: 100% !important;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){            /* small screen rules */
+    .steps .right img{
+        max-width: 120%;
+        height: 120vh;
+    }
+}
+/* end media for section steps */
+/* end section steps */
+
+/* start section wash */
+.wash{
+    margin: 60px 0px;
+    overflow: hidden;
+}
+
+.wash .content h2{
+    color: #50658e;
+    cursor: pointer;
+    font-size: 26px;
+} 
+
+.wash .content h2 span{
+    font-size: 23px;
+    padding-left: 12px;
+    color: red;
+} 
+
+.wash .content a{
+    font-size: 19px;
+    word-spacing: 6px;
+} 
+
+.wash .content a i{
+    margin-left: 8px;
+    margin-top: 3px;
+    font-size: 14px;
+} 
+
+.wash .box{
+    margin: 50px 0px;
+    transition: all .5s;
+}
+
+.wash .box img{
+    max-width: 75%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid #e2e2e2;
+    animation-name: img-rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+}
+
+@keyframes img-rotate{
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.wash .box:hover{
+    transform: scale(1.1, 1.1);
+    transition: all .5s;
+}
+/* end section wash */
+
+/* start section treatment */
+.treatment{
+    background-image: url(../images/shape-a.png);
+    background-color: #2766bb;
+    margin: 70px 0px 0px 0px;
+    padding: 65px 0px;
+    box-shadow: 1px 1px 7px 1px #fff;
+}
+
+.treatment .left h3{
+    color: #00dcff;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.treatment .left h1{
+    color: #fff;
+    font-weight: bold;
+}
+
+.treatment .left p{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.treatment .right{
+    background-color: #00223547;
+    padding: 29px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.treatment .right ul{
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.treatment .right ul li{
+    padding-left: 15px;
+    list-style-type: none;
+    margin-left: -29px;
+    font-size: 15px;
+}
+
+.treatment .right li i{
+    font-size: 13px;
+    margin-right: 12px;
+}
+/* start media for section treatment */
+@media (max-width: 992px) and (max-width: 1199px) {          /* meduim screen rules */
+    .treatment .left h1{
+        color: #fff;
+        font-weight: bold;
+        font-size: 35px;
+    }
+}
+/* end media for section treatment */
+/* end section treatment */
+
+/* start section protect */
+.protect2{
+    background-color: #f7f9fe;
+    padding: 100px 0px;
+    transition: all .5s;
+}
+
+.protect2 .content h3{
+    color: blue;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.protect2 .content h1{
+    color: #50658e;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.protect2 .content p{
+    color: gray;
+    font-size: 16px;
+}
+
+.protect2 .left{
+    margin-top: 120px;
+}
+
+.protect2 .left .box{
+    margin-bottom: 20px;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.protect2 .left .box h6{
+    font-size: 13px;
+    color: #0086c4;
+    margin-right: 10px;
+}
+
+.protect2 .left .box i{
+    color: #ff5656;
+    position: absolute;
+    right: 72px;
+    top: 2px;
+}
+
+.protect2 .left .box img{
+    max-width: 30%;
+    border: 1px solid #0086c4;
+    border-radius: 50%;
+}
+
+.protect2 .med img{
+    margin: 115px 0px 0px 0px;
+}
+
+.protect2 .right{
+    margin-top: 120px;
+}
+
+.protect2 .right .box{
+    margin-bottom: 20px;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.protect2 .right .box h6{
+    font-size: 13px;
+    color: #0086c4;
+    margin-left: 10px;
+}
+
+.protect2 .right .box i{
+    color: #00b900;
+    position: absolute;
+    left: 72px;
+    top: 2px;
+}
+
+.protect2 .right .box img{
+    max-width: 30%;
+    border: 1px solid #0086c4;
+    border-radius: 50%;
+}
+/* start media for section protect */
+@media(max-width: 767px) {                                           /* mobile and tablet screen rules */
+    .protect2 .row{
+        justify-content: center !important;
+    }
+
+    .protect2 .right .box i{
+        left: 67px;
+        top: 2px;
+    }
+
+    .protect2 .left .box i{
+        right: 67px;
+        top: 2px; 
+    }
+
+    .protect2 .one{
+        order: 1;
+    }
+
+    .protect2 .two{
+        order: 2;
+    }
+
+    .protect2 .three{
+        order: 3;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {                      /* small screen rules */
+    .protect2 .right .box i{
+        left: 95px;
+        top: 2px;
+    }
+
+    .protect2 .left .box i{
+        right: 95px;
+        top: 2px; 
+    }
+
+    .protect2 .one{
+        order: 1;
+    }
+
+    .protect2 .two{
+        order: 2;
+    }
+
+    .protect2 .three{
+        order: 3;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {                      /* meduim screen rules */
+    .protect2 .right .box i{
+        left: 60px;
+        top: 2px;
+    }
+
+    .protect2 .left .box i{
+        right: 60px;
+        top: 2px; 
+    }
+}
+/* end media for section protect */
+/* end section protect */
+
+/* start section common */
+.common .content{
+    margin: 67px 0px;
+}
+
+.common .content h3{
+    color: blue;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.common .content h1{
+    color: #50658e;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.common .left .list-group ul{
+    list-style-type: none;
+}
+
+.common .left .list-group ul li{
+    margin: 3px 0px;
+    border: 1px solid #e0e0e0;
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.common .left .list-group ul li:hover{
+    border: 1px solid #6b6bfd;
+    transition: all .5s;
+}
+
+.common .left .list-group ul li:hover a{
+    color: #6b6bfd;
+    transition: all .5s;
+}
+
+.common .left .list-group ul li a{
+    text-decoration: none;
+    color: gray;
+    transition: all .5s;
+}
+
+.common .right .listing{
+    margin: 3px 0px;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+}
+
+.common .right .list-group ul{
+    list-style-type: none;
+}
+
+.common .right .list-group ul li{
+    background-color: #f7f7f7;
+    transition: all .5s;
+}
+
+.common .right .list-group ul li:hover{
+    border: 1px solid #6b6bfd;
+    transition: all .5s;
+}
+
+.common .right .list-group ul li:hover a{
+    color: #6b6bfd;
+    transition: all .5s;
+}
+
+.common .right .list-group ul li a{
+    text-decoration: none;
+    color: gray;
+    transition: all .5s;
+}
+
+.common .right .listing p{
+    padding: 10px;
+}
+/* end section common */
+
+/* start section update */
+.update{
+    background-color: #f7f9fe;
+    padding: 100px 0px;
+    transition: all .5s;
+    margin: 30px 0px;
+}
+
+.update .content h3{
+    color: blue;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.update .content h1{
+    color: #50658e;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.update .box{
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 6px 5px #dcdcdc;
+}
+
+.update .box img{
+    border-radius: 5px;
+}
+
+.update .box h5{
+    margin-top: 16px;
+    color: #465675;
+    font-size: 18px;
+}
+
+.update .box p{
+    color: gray;
+    line-height: 1.5em;
+    margin-top: 17px;
+}
+/* start media for section update */
+@media(min-width: 768px) and (max-width: 992px){
+    .update .box h5{
+        font-size: 16px;
+    }
+}
+/* end media for section update */
+/* end section update */
+
+/* start footer */
+footer{
+    background-image: url(../images/shape-a.png);
+    background-color: #151c2e;
+    background-size: 100% auto;
+    margin: 70px 0px 0px 0px;
+    padding: 65px 0px;
+    box-shadow: 1px 1px 7px 1px #fff;
+}
+
+footer .box h2{
+    color: #fff;
+}
+
+footer .box p{
+    color: #b2bfe0;
+    font-size: 12px;
+}
+
+footer .box i{
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+footer .box i[class="fas fa-virus"]{
+    color: red;
+    margin-right: 0px;
+    animation-name: virus-rotate;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+footer .box i[class="fab fa-facebook-f"]:hover{
+    color: blue;
+}
+
+footer .box i[class="fab fa-twitter"]:hover{
+    color: aqua;
+}
+
+footer .box i[class="fab fa-youtube"]:hover{
+    color: red;
+}
+
+footer .box2 h2{
+    color: #fff;
+    font-size: 24px;
+}
+
+footer .box2 ul{
+    list-style-type: none;
+    color: #fff;
+    padding: 0px;
+}
+
+footer .box2 ul li a{
+    color: #b2bfe0;
+    font-size: 12px;
+    line-height: 2.2;
+    text-decoration: none;
+}
+
+footer .box2 ul li a:hover{
+    color: blue;
+}
+
+footer hr{
+    background-color: #ffffff29;
+}
+
+footer .last{
+    color: #b2bfe0;
+    font-size: 14px;
+}
+
+footer .last span{
+    color: #fff;
+    font-size: 16px;
+    padding-left: 4px;
+}
+/* start media for footer */
+@media(max-width: 767px){              /* mobile and tablet screen rules */
+    footer .box2{
+        margin-top: 30px;
+    }
+}
+/*end media for footer */
+/* end footer */
+
+/* scroll-top div */
+
+ .scroll-top i{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #3535ff;
+    padding: 6px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.scroll-top i:hover{
+    transform: scale(1.1, 1.1);
+    transition: all .5s;
+}
+
+/* scroll-top div */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,259 @@
+body{
+    height: 3000px;
+}
+
+img[class="only"]{
+    animation-name: Rotation;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.navbare{
+    border-bottom: 2px solid orangered;
+}
+
+.navbare ul li a:hover{
+    color: orangered;
+}
+
+/* start section brands */
+.brands .gff{
+    overflow: hidden;
+}
+
+.brands h2[class="top"]{
+    color: orangered;
+    margin: 20px 0px;
+    padding: 10px;
+    animation-name: moving;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-direction: alternate;
+}
+
+@keyframes moving{
+    0%{
+        left: 0;
+    }
+
+    50%{
+        left: 30%;
+    }
+
+    100%{
+        left: 60%;
+    }
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.brands .container .box{
+    text-align: center;
+    margin: 4px;
+    padding: 10px;
+    transition: all 0.5s;
+    cursor: pointer; 
+}
+
+.brands .container .box:hover{
+    background-color: black;
+    color: #fff;
+    transition: all 0.5s;
+    border-radius: 5px;
+    transform: scale(1.1, 1.1);
+}
+
+.brands .container .box button{
+    color: #fff;
+    background-color: orangered;
+    border: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+@media (max-width: 767px) {                                    /* mobile and tablet screen rules */
+    .brands h2[class="top"]{
+        color: orangered;
+        margin: 20px 0px;
+        padding: 10px;
+        animation: none;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .brands .container .box{
+        text-align: center;
+        margin-bottom: 35px;
+        padding: 10px;
+        transition: all 0.5s;
+        cursor: pointer;
+        width: 80%; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {                /* small screen rules */
+    .brands h2[class="top"]{
+        color: orangered;
+        margin: 20px 0px;
+        padding: 10px;
+        animation: none;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .brands .container .box{
+        text-align: center;
+        margin-bottom: 35px;
+        padding: 10px;
+        transition: all 0.5s;
+        cursor: pointer;
+        width: 80%; 
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {                /* meduim screen rules */
+    .brands h2[class="top"]{
+        color: orangered;
+        margin: 20px 0px;
+        padding: 10px;
+        animation: none;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .brands .container .box{
+        margin: 12px;
+    }
+}
+/* end section brands */
+
+/* start section store */
+.store h2{
+    text-align: center;
+    margin: 40px 0px;
+    background-color: black;
+    padding: 10px 0px;
+    color: #fff;
+    box-shadow: 1px 1px 6px 1px black;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.store h2:hover{
+    transition: all .5s;
+    transform: scale(1.1, 1.1);
+}
+
+.store h2 span{
+    color: orangered;
+}
+/* end section store */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

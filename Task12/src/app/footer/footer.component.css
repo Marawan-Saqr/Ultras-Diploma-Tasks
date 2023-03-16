@@ -1,0 +1,9 @@
+h2{
+    color: #fff;
+    background-color: #333;
+    padding: 10px 0px;
+}
+
+h2 span{
+    color: orangered;
+}

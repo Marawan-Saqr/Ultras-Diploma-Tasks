@@ -1,0 +1,34 @@
+.about-us img[class="cover"]{
+    max-width: 300px;
+    margin-bottom: -30px;
+}
+
+.about-us button{
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px black;
+    margin-bottom: 20px;
+}
+
+.about-us2{
+    overflow: hidden;
+}
+
+.about-us2 h5{
+    margin: 0px;
+}
+
+.about-us2 p{
+    color: gray;
+}
+
+.about-us2 img{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.about-us2 img:hover{
+    transform: scale(1.1, 1.1);
+    transition: all .5s;
+}

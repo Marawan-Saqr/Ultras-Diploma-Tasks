@@ -1,0 +1,323 @@
+body{
+    height: 3000px;
+}
+
+/* start style for nav */
+.navbar{
+    background-image: linear-gradient(to right, green 30%, #fff 50%, red 20%);
+}
+
+.navbar img{
+    margin-right: 5px;
+    cursor: pointer;
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.navbar h5{
+    color: #fff;
+    margin-top: 5px;
+    text-shadow: 1px 1px 3px black;
+}
+/* end style for nav */
+
+/* start section about-us */
+.about-us{
+    margin: 50px 0px;
+    background-color: orangered;
+    padding: 20px 0px;
+    box-shadow: 1px 1px 8px 1px black;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.about-us h1{
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.about-us .hr{
+    margin: 10px auto;
+}
+
+.about-us .hr.one{
+    width: 50%;
+    border-radius: 50%;
+    background-color: green;
+    height: 4px;
+}
+
+.about-us .hr.two{
+    width: 30%;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 4px;
+}
+
+.about-us .hr.three{
+    width: 10%;
+    border-radius: 50%;
+    background-color: red;
+    height: 4px;
+}
+
+.about-us .row{
+    align-items: center;
+}
+
+.about-us .left img{
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.about-us .left img:hover{
+    transition: all .5s;
+    transform: scale(1.1, 1.1);
+}
+
+.about-us .right h2{
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.about-us .right p{
+    color: #fff;
+}
+/* start media for section about-us */
+@media (max-width: 767px) {                            /* mobile and tablet screen rules */
+    .about-us .container .right{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {     /* small screen rules */
+    .about-us .container .right{
+        text-align: center;
+    }
+}
+/* end media for section about-us */
+/* end section about-us */
+
+/* start section about-us */
+.our-menu .hr{
+    margin: 10px auto;
+}
+
+.our-menu .hr.one{
+    width: 50%;
+    border-radius: 50%;
+    background-color: green;
+    height: 4px;
+}
+
+.our-menu .hr.two{
+    width: 30%;
+    border-radius: 50%;
+    background-color: black;
+    height: 4px;
+}
+
+.our-menu .hr.three{
+    width: 10%;
+    border-radius: 50%;
+    background-color: red;
+    height: 4px;
+}
+
+.our-menu #nav-tab{
+    margin: 30px auto;
+    width: 40%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: red !important;
+}
+
+.our-menu #nav-tabContent img{
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+/* end section about-us */
+
+/* start section contact-us */
+.contact-us{
+    background-color: black;
+    background-image: linear-gradient(to right, black 40%, white 230%);
+}
+
+.contact-us h1{
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.contact-us .hr{
+    margin: 10px auto;
+}
+
+.contact-us .hr.one{
+    width: 50%;
+    border-radius: 50%;
+    background-color: green;
+    height: 4px;
+}
+
+.contact-us .hr.two{
+    width: 30%;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 4px;
+}
+
+.contact-us .hr.three{
+    width: 10%;
+    border-radius: 50%;
+    background-color: red;
+    height: 4px;
+}
+
+.contact-us .container .left{
+    margin: 20px 0px;
+}
+
+.contact-us .container .row{
+    align-items: center;
+}
+
+.contact-us .container .left h2{
+    color: #fff;
+    font-size: 43px;
+}
+
+.contact-us .container .left form label{
+    color: #fff;
+    padding-top: 10px;
+}
+
+.contact-us .container .left form input{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 6px 7px;
+}
+
+.contact-us .container .left form input[class="unique"]{
+    width: 17%;
+    margin: 19px 0px;
+    background-color: #008d98;
+    color: #fff;
+}
+
+.contact-us .container .right img{
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* end section contact-us */
+
+/* start footer */
+footer{
+    background-color: #333;
+    padding: 32px 0px;
+    transition: all .5s;
+}
+
+footer:hover{
+    background-color: black;
+    color: black;
+    transition: all .5s;
+}
+
+footer .container h4{
+    color: #fff;
+    font-size: 19px;
+}
+
+footer .container .one p{
+    color: gray;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+footer .container .two ul, .three ul{
+    list-style: none;
+    padding: 0px;
+    color: gray;
+}
+
+footer hr{
+    background-color: gray;
+}
+
+footer h6{
+    color: gray;
+}
+
+footer .container .right i{
+    color: gray;
+    font-size: 24px;
+    background-color: #abaaaa;
+    padding: 5px 5px;
+    border-radius: 50%;
+    margin-right: 3px;
+    cursor: pointer;
+}
+/* end footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

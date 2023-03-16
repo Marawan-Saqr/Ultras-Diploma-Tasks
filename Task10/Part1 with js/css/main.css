@@ -1,0 +1,152 @@
+/* start personal theme */
+.display{
+    display: none;
+}
+
+.margin{
+    margin-right: 5px;
+}
+
+.check{
+    background-color: red;
+    text-decoration: line-through;
+}
+
+body{
+    height: 3000px;
+}
+
+.btn{
+    padding: 0px;
+}
+
+hr{
+    background-color: black;
+    width: 50%;
+}
+/* end personal them */
+
+/* start nav */
+nav{
+    background-color: orange;
+    padding: 10px 0px;
+    box-shadow: 1px 1px 4px 1px red;
+}
+
+nav .logo h3{
+    color: #fff;
+}
+
+nav .but button{
+    background-color: black;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 15px;
+    border: none;
+}
+
+nav .row{
+    align-items: center;
+}
+/* end nav */
+
+/* start section menu */
+.menu {
+    background-color: #ff8100;
+    color: #fff;
+}
+
+.menu ul{
+    text-align: center;
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.menu ul li:hover{
+    color: rgb(185, 49, 0);
+    transition: all .5s;
+    transform: scale(1.1, 1.1);
+}
+/* end section menu */
+
+/* start section data */
+.data .card{
+    margin: 40px 0px;
+    border: 1px solid orangered;
+}
+
+.data label{
+    color: orangered;
+}
+
+.data button{
+    margin: 20px 0px;
+}
+/* end section data */
+
+/* start section down */
+.down .card{
+    margin: 40px 0px;
+    border: 1px solid orangered;
+}
+
+.down h5{
+    background-color: orangered;
+    padding: 5px 0px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.down .last button{
+    margin-bottom: 13px;
+    transition: all .9s;
+}
+
+.down .last button:hover{
+    background-color: red;
+    transition: all .9s;
+}
+
+/* end section down */
+
+/* start section info */
+.info button{
+    margin: 20px 10px;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.info img{
+    border-radius: 8px;
+    max-width: 70%;
+    margin: 20px 0px;
+}
+/* end section info */
+
+/* start media for nav */
+@media(max-width: 767px) {              /* mobile and tablet screen rules */
+    nav{
+        text-align: center;
+    }
+}
+
+/* start media for section down */
+@media(max-width: 767px) {              /* mobile and tablet screen rules */
+    .down .last button{
+        width: 30%;
+    }
+}
+
+/* start media for section info */
+@media(max-width: 767px) {              /* mobile and tablet screen rules */
+    .info{
+       text-align: center;
+    }
+}

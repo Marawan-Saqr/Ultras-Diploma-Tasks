@@ -1,0 +1,32 @@
+.home{
+    background-image: url(https://wallpapercave.com/wp/wp4275519.jpg);
+    background-size: 100% 100%;
+    height: 620px;
+}
+
+.home .content{
+    color: #fff;
+    margin: 119px 0px;
+}
+
+.home .content ul{
+    list-style-type: none;
+    padding: 0px;
+    font-size: 26px;
+}
+
+.home .content ul li{
+    line-height: 2.2;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.home .content ul li:hover{
+    color: red;
+    transition: all .5s;
+}
+
+.home .right img{
+    border-radius: 5px;
+}
+

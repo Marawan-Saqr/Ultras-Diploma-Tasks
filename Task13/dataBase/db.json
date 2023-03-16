@@ -1,0 +1,64 @@
+{
+  "Clients": [
+    {
+      "id": 1,
+      "name": "Marawan Mahmoud",
+      "cash": 3500
+    },
+    {
+      "id": 2,
+      "name": "Mohmed El Hossiny",
+      "cash": 5500
+    },
+    {
+      "id": 3,
+      "name": "Mohmed Abo Zied",
+      "cash": 7500
+    },
+    {
+      "id": 4,
+      "name": "Ahmed Mohmed",
+      "cash": 1200
+    },
+    {
+      "id": 5,
+      "name": "Magdy Khalaf",
+      "cash": 8200
+    },
+    {
+      "id": 6,
+      "name": "Yasser Ahmed",
+      "cash": 7000
+    },
+    {
+      "name": "Taha Mahmoud Taha ",
+      "cash": "4000",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "Ayman Mohmed",
+      "cash": 8500
+    },
+    {
+      "name": "Mohmed Ahmed",
+      "cash": "8000",
+      "id": 9
+    },
+    {
+      "name": "Mohmed Yasser",
+      "cash": "4500",
+      "id": 10
+    },
+    {
+      "name": "Osama Mohmed",
+      "cash": "14000",
+      "id": 11
+    },
+    {
+      "name": "Zeinb Mahrous",
+      "cash": "9500",
+      "id": 12
+    }
+  ]
+}

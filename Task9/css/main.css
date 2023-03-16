@@ -1,0 +1,135 @@
+nav{
+    background-color: black;
+    padding: 15px 0px;
+}
+
+nav .box button{
+    border: none;
+    padding: 5px 6px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+nav .box button[class="design"]{
+    background-color: red;
+    color: #fff;
+}
+
+nav .box button[class="programming"]{
+    background-color: yellow;
+    color: #fff;
+}
+
+nav .box button[class="frameworks"]{
+    background-color: green;
+    color: #fff;
+}
+
+nav .box ul{
+    color: #fff;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.display{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

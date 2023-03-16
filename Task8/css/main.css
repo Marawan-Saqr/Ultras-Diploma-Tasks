@@ -1,0 +1,134 @@
+nav{
+    background-color: crimson;
+    box-shadow: 1px 1px 3px 2px black;
+}
+
+nav .row{
+    align-items: center;
+}
+
+nav .logo h1{
+    color: #fff;
+}
+
+nav .logo h1 span[class="first"]{
+    color: blue;
+}
+
+nav .logo h1 span[class="second"]{
+    color: red;
+}
+
+nav .but button{
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+
+/* media query */
+@media (max-width: 767px) {                                  /* mobile and tablet screen rules */
+    nav{
+        text-align: center;
+    }
+}
+/* media query */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

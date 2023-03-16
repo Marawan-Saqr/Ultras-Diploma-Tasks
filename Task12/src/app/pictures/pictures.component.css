@@ -1,0 +1,24 @@
+.footballers{
+    margin-top: 83px;
+    margin-bottom: 30px;
+}
+
+.footballers h2 span{
+    color: red;
+}
+
+.pictures{
+    margin-bottom: 30px;
+}
+
+.pictures h2 span{
+    color: yellow;
+}
+
+.pictures h2[class="last"] span{
+    color: blue;
+}
+
+img{
+    border-radius: 5px;
+}

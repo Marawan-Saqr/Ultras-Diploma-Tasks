@@ -1,0 +1,125 @@
+/* start personal theme */
+body{
+    background-color: black;
+}
+
+.display{
+    display: none;
+}
+/* end personal theme */
+
+
+
+h1{
+    color: #00bbbb;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.no-task .delete{
+    margin-top: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+    transition: all .5s;
+}
+
+.no-task button:hover{
+    background-color: rgb(187, 0, 0);
+    transition: all .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

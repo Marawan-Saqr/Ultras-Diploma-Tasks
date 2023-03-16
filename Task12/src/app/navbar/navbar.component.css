@@ -1,0 +1,38 @@
+.navbar{
+    background-color: transparent;
+}
+
+.navbar button{
+    border-radius: 20px;
+}
+
+.navbar .special{
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.navbar img{
+    animation-name: rotate-ball;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-ball{
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
